@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b>STUDENT REGISTERATION</b></title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <h>STUDENT REGISTERATION</h><br>
+        <input type="text" name="firstname" placeholder="student first name"><br>
+        <input type="text" name="lastname" placeholder="student last name"><br>
+        <input type="text" name="address" placeholder="Home Address"><br>
+        <input type="text" name="city" placeholder="City"><br>
+        <input type="text" name="state" placeholder="State"><br>
+        <input type="text" name="emailaddress" placeholder="Email Address"><br>
+        <input type="text" name="phone" placeholder="phone"><br>
+        <input type="text" name="DOB" placeholder="DOB"><br>
+        <input type="radio" name="gender" placeholder="gender"><br>
+        <input type="text" name="mothersname" placeholder="mothersname"><br>
+        <input type="text" name="fathersname" placeholder="fathersname"><br>
+        <input type="text" name="fatheroccupation" placeholder="fatheroccupation"><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

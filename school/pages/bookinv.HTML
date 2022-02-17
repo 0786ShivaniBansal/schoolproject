@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Inventory</title>
+</head>
+<body>
+    <h><b>BOOK INVENTORY MANAGEMENT</b></h>
+    <form method="post">
+        {% csrf_token %}
+        <label for="select operation">Select Operation</label>
+        <select for="Books" name="Books">
+        <option value="Add Book">AddBook</option>
+        <option value="Delete Book">DeleteBook</option>
+        <option value="Search Book">SearchBook</option>
+    
+    </select>
+    <h1><b>Book Fields</b></h1>
+    <label for ="Title">Title</label>
+    <input type="text" name="Title"><br>
+    <label for ="Author">Author</label>
+    <input type="text" name="Author"><br>
+    <label for ="ISBN">ISBN</label>
+    <input type="text" name="ISBN"><br>
+    <label for ="Publisher">Publisher</label>
+    <input type="text" name="Publisher"><br>
+    <label for ="year">year</label>
+    <input type="text" name="year"><br>
+    <input type="submit"><br>
+
+
+    </form>
+</body>
+</html>
