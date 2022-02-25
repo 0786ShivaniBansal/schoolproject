@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
-from school.models import student,Book,Bookinv
+from school.models import student,Book,Bookinv,index
 
 # Create your views here.
 def reg(request):
@@ -20,3 +20,16 @@ def bookinv(request):
         print(request.POST)
         i=Bookinv.objects.create(Title=request.POST['Title'],Author=request.POST['Author'],ISBN=request.POST['ISBN'],Publisher=request.POST['Publisher'],year=request.POST['year'])
     return render(request,'bookinv.HTML')
+
+def issuebook(request):
+    return render(request,'issuebook.html')
+
+def ind(request):
+    if(request.method=='POST'):
+        print(request.POST)
+        return redirect('books')
+    elif():
+        return redirect('issuebook')
+    return render(request,'ind.html')
+
+    

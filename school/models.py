@@ -1,9 +1,5 @@
-from ctypes import addressof
-from operator import mod
-from pickle import TRUE
-from turtle import title
-from django.db import models
 
+from django.db import models
 # Create your models here.
 class student(models.Model):
     firstname=models.CharField(max_length=100,null=True,blank=True)
@@ -32,3 +28,7 @@ class Bookinv(models.Model):
     Publisher=models.TextField(null=True,blank=True)
     year=models.IntegerField(null=True,blank=True)
     
+
+class index(models.Model):
+    addbook=models.TextField(null=True,blank=True)
+    issuebook=models.TextField(null=True,blank=True)
