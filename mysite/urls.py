@@ -22,6 +22,7 @@ from weather.api import weather
 
 
 urlpatterns = [
+    path('',include('design.urls')),
     # path('',include('weather.urls')),
     path('school',include('school.urls')),
     path('admin/', admin.site.urls),

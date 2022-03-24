@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sennovate+</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+</head>
+<body>
+   <p><img src="static\img\download.png" width="150" height="70"> </p>
+    <div class="sign-up-form">
+    <h><b>Sign In</b></h>
+    <form method="post"></form>
+    {% csrf_token %}
+    <label for="email address">Email Address</label><br>
+    <input type="text" class="input-box" name="emailaddress"><br>
+    <label for="password">Password</label><br>
+    <input type="text" class="input-box" name="password">
+    <p><input type="checkbox">Remember Me &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp <a href="#">forgot password?</a></p>
+    <button type="button"onclick="alert('submitted')">Click Me!</button>
+    <hr>
+    <p class="Don't have an account yet?">Don't have an account yet?<a href="#">Create an Account</a></p>
+
+    
+</div>
+    
+</body>
+</html>

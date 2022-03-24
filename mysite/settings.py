@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'weather',
     'school',
+    'design',
     'rest_framework',
 ]
 
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['school/pages'],
+        'DIRS': ['school/pages','design/templ'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,6 +124,12 @@ STATICFILES_DIRS=[BASE_DIR / 'static',]
 STATIC_ROOT=BASE_DIR / 'files'
 MEDIA_URL = '/media/'
 MEDIA_ROOT =BASE_DIR/'pictures'
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sb8877517@gmail.com' 
+EMAIL_HOST_PASSWORD = 'Shi@3108'
+EMAIL_USE_TLS = True
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES':[
         'rest_framework.permissions.IsAuthenticated',
